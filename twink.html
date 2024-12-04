@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Twin</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      height: 400px;
+      position: relative;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .twin {
+      font-size: 100px;
+      color: #911bb6;
+      animation: twinGlow 1.5s infinite alternate;
+      position: absolute;
+      top: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes twinGlow {
+      0% {
+        text-shadow: 0 0 10px #911bb6, 0 0 20px #911bb6, 0 0 30px #911bb6;
+      }
+      100% {
+        text-shadow: 0 0 20px #911bb6, 0 0 40px #911bb6, 0 0 60px #911bb6;
+      }
+    }
+
+    .letter {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 80px;
+      animation: fadeIn 3s ease-out;
+    }
+
+    /* Letter fade-in effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="twin">🥷</div>
+    <div class="letter">
+      <p>My Dearest,</p>
+      <p> Yo wasup twin, I js wanna say tht hope u have a good day yfm christmas is comin up n shi but i aint feel the christmas air smh, hope u do tho.</p>
+      <p> Anyw twin i wanna say tht i accept christmas gifts despite not feeling the air Aahaha xd. I accept everything twin so cmon u can gimme sum yk.</p>
+      <p>With all my aura,<br>Forever Yours</p>
+    </div>
+  </div>
+
+</body>
+</html>
